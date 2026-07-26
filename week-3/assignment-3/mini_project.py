@@ -1,36 +1,26 @@
+day = input("What day is it?")
+time = input("what time of day?")
 
-day = input("What day is it? ").strip().lower()
-time = input("What time of day? ").strip().lower()
+if day == "Monday" and time =="morning":
+    print("Suggestion: You should eat breakfast and go to work!")
+elif day == "Monday" and time =="afternoon":
+    print("Suggestion: You should eat lunch and go for a walk!")
+elif day == "Monday" and time =="evening":
+    print("Suggestion: You should eat dinner and relax!")
 
-if day == "monday":
-    if time == "morning":
-        print("Suggestion: You should eat breakfast and go to work!")
-    elif time == "afternoon":
-        print("Suggestion: You should eat lunch and go for a walk!")
-    elif time == "evening":
-        print("Suggestion: You should eat dinner and relax!")
-    else:
-        print("Sorry, I don't recognize that time. Try: morning, afternoon, or evening.")
 
-elif day == "friday":
-    if time == "morning":
-        print("Suggestion: You should go to yoga class!")
-    elif time == "afternoon":
-        print("Suggestion: You should study!")
-    elif time == "evening":
-        print("Suggestion: You should go out with friends!")
-    else:
-        print("Sorry, I don't recognize that time. Try: morning, afternoon, or evening.")
+elif day == "Friday" and time =="morning":
+    print("Suggestion: You should go to yoga class!")
+elif day == "Friday" and time =="afternoon":
+    print("Suggestion: You should study!")
+elif day == "Friday" and time =="evening":
+    print("Suggestion: You should go out with friends!")
 
-elif day == "sunday":
-    if time == "morning":
-        print("Suggestion: You should go to church!")
-    elif time == "afternoon":
-        print("Suggestion: You should meal prep!")
-    elif time == "evening":
-        print("Suggestion: You should relax and get ready for the week!")
-    else:
-        print("Sorry, I don't recognize that time. Try: morning, afternoon, or evening.")
-
+elif day == "Sunday" and time =="morning":
+    print("Suggestion: You should go to church!")
+elif day == "Sunday" and time =="afternoon":
+    print("Suggestion: You should meal prep!")
+elif day == "Sunday" and time =="evening":
+    print("Suggestion: You should relax and get ready for the week!")
 else:
-    print("Sorry, I don't recognize that day. Try: Monday, Friday, Sunday...")
+    print("Suggestion: Sorry, I don't recognize that day. Try: Monday, Friday, Sunday...!")
