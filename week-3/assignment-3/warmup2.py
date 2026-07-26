@@ -1,14 +1,12 @@
-age = int(input("What is your age: "))
+age = int(input("Enter your age: "))
 
 age_range = ""
 
-if 0 < age <= 12:
-    age_range = "Child"
-elif 12 < age <= 17:
-    age_range = "Teen"
-elif 17 < age <= 64:
-    age_range = "Adult"
-else:
-    age_range = "Senior"
-
-print(f"Age range: {age_range}")
+if age >= 0 and age <= 12:
+    print("You are a Child.")
+elif age >= 13 and age <= 17:
+    print("You are a Teen.")
+elif age >= 18 and age <= 64:
+    print("You are an Adult.")
+elif age >= 65:
+    print("You are a Senior.")
